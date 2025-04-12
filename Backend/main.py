@@ -55,7 +55,7 @@ async def compare_resumes(files: List[UploadFile] = File(...)) -> Dict[str, str]
 
         # Construct comparison prompt
         prompt = f"""
-Compare the following two resumes. Highlight strengths, weaknesses, and unique qualities of each candidate. Provide a brief summary of how they differ and which might be more suitable for a software engineering position.
+Compare the following two resumes. Analysis strengths, weaknesses, and unique qualities of each candidate. Provide which name of candidate is perfect for software engineering position and Give a 50 words vaild reason for selection.
 
 Resume 1:
 {texts[0]}
